@@ -1,2 +1,6 @@
 <h1>Imdb#top250</h1>
-<p>Find me in app/views/imdb/top250.html.erb</p>
+<p id="films">
+	<% @list.each do |film| %>
+		<%= film.position %>: <%= film.name %><br>
+	<% end %>
+</p>
